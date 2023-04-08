@@ -839,4 +839,7 @@ footer > img {
     main > img {
         display: none;
     }
+    main > fieldset > a {
+        top:290px;
+    }
 }
