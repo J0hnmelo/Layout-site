@@ -111,7 +111,7 @@ main {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651), -1px -1px 1px rgba(0, 0, 0, 0.384);
 }
 main > fieldset {/*#026CB6*/
-    
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -184,15 +184,16 @@ main > fieldset > p > #labels {
 main > fieldset > p > #iida {
     position: relative;
     left: -25px;
-    top: -90px;
+    top: -70px;
     font-size: 1.2em;
     font-weight: bold;
     cursor: pointer;
 }
+
 main > fieldset > p > #ivolta {
     position: relative;
     left: -5px;
-    top: -90px;
+    top: -70px;
     font-size: 1.2em;
     font-weight: bold;
     cursor: pointer;
@@ -216,9 +217,9 @@ main > fieldset > p > #i-ida2 {
 main > fieldset > p > #i-volta2 {
     font-size: 1.2em;
     font-weight: bold;
-    position: absolute;
-    top: 460px;
-    left: 40%;
+    position: relative;
+    top: -25px;
+    left: -45px;
 }
 
 .volta{
@@ -226,12 +227,13 @@ main > fieldset > p > #i-volta2 {
 }
 main > fieldset > p > #i-volta {
     width: 200px;
-    height: 28.5px;
+    
     text-align: center;
     font-size: 1.2em;
-    position: absolute;
-    top: 459px;
-    left: 42.8%;
+    position: relative;
+    top: -25px;
+    left: -45px;
+    
 }
 #ivolta:checked ~ .volta{
     display: inline-block;
@@ -473,9 +475,210 @@ footer > img {
 .menuz3 {
     display: none;
 }
-@media screen and (min-width: 200px) and (max-width: 1024px) {
+@media screen and (min-width: 400px) and (max-width: 764px) {
     body {
         grid-gap: 35px;
+    }
+    header > img {
+        position: relative;
+        left: -42px;
+    }
+    header > #menu1 {
+        display:none;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(36, 191, 196, 0.685);
+        border: 2px solid black;
+        height: 200px;
+        width: 100px;
+        padding: 80px;
+        position: absolute;
+        top: 40px;
+        animation-fill-mode: forwards;
+        animation-name: menuz;
+        transition: 0.3s;
+        animation-duration: 0.5s;
+    }
+    header > #menu1 > a {
+        margin: 0;
+        margin-bottom: 15px;
+        padding: 5px;
+        width: 150px;
+        text-align: center;
+        border-bottom: 2px solid black;
+    }
+
+    header > #menu2 {
+        display:flex;
+        width:200px;
+        height: 50px;
+        text-align: center;
+        position: relative;
+        left: -403px;
+        top: 100%;
+    }
+    header > #menu2 > a {
+        width:100px;
+        padding: 10px 20px; 
+        margin-top: 30px;
+    }
+    .menuz3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        left: 85%;
+        top: 26%;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+    .linhas {
+        background-color: rgb(255, 153, 0);
+        height: 5px;
+        width: 30px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+    }
+    
+    
+    .menuz3:checked ~ #menu1 {
+       display: flex;
+       transform: rotate(72grad);
+    }
+
+    
+    @keyframes menuz {
+        to {
+            transform: translate(245px, 5%)
+        }
+       }
+    #imenu3 {
+        display: none;
+    }
+    header > label > span {
+        background-color: red;
+        
+    }
+    .bot {
+        display: none;
+    }
+    #idesligar {
+        display: none;
+    }
+    main > img {
+        display: none;
+    }
+    main > fieldset > p > #iida {
+        position: relative;
+        left: 45px;
+        top: -59px;
+        font-size: 1.2em;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #ivolta:checked ~ .volta{
+        display: inline-block;
+    }
+
+   
+    #iida:checked ~ #i-ida {
+        left: -24.5px;
+        top: -78px;
+    }
+    #iida:checked ~ #i-ida2 {
+        left: -24.5px;
+        top: -78px;
+    }
+    #iida:checked ~ #ivolta {
+        top: -88px;
+        left: -13px;
+    }
+    
+    
+
+
+    main > fieldset > p > #ivolta {
+        position: relative;
+        left: 70px;
+        top: -60px;
+        font-size: 1.2em;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    main > fieldset > p > #i-ida {
+        width: 200px;
+        text-align: center;
+        font-size: 1.2em;
+        position: relative;
+        top: -50px;
+        left: 58px;
+    }
+    main > fieldset > p > #i-ida2 {
+        font-size: 1.2em;
+        font-weight: bold;
+        position: relative;
+        top: -50px;
+        left: 58px;
+        
+    }
+    main > fieldset > p > #i-volta {
+        width: 200px;
+        height: 28.5px;
+        text-align: center;
+        font-size: 1.2em;
+        top: -55px;
+        left: 90px;
+    }
+    main > fieldset > p > #i-volta2 {
+        width: 200px;
+        height: 28.5px;
+        text-align: center;
+        font-size: 1.2em;
+        position: relative;
+       left: -35px;
+        
+    }
+    footer {
+        display: flex;
+        
+    }
+    #DA {
+        width: 10%;
+    }
+    #AA {
+        width: 18%;
+    }
+    #LT {
+        width: 18%;
+    }
+    #GL {
+        width: 10%;
+        height: 100px;
+    }
+    aside {
+        height: 1700px;
+        background-image: url(../imagens/ceuback.jpg);
+        background-position: bottom top;
+        
+        
+    }
+    .estados {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 400px) {
+    body {
+        grid-gap: 35px;
+    }
+    header {
+        width: 400px;
+    }
+    header > img {
+        position: relative;
+        left: -42px;
     }
     header > #menu1 {
         display:none;
@@ -506,12 +709,14 @@ footer > img {
         display:flex;
         width:200px;
         height: 50px;
+        text-align: center;
         position: relative;
         left: -403px;
         top: 100%;
     }
     header > #menu2 > a {
         width:100px;
+        padding: 10px 20px; 
         margin-top: 30px;
     }
     .menuz3 {
@@ -569,16 +774,17 @@ footer > img {
         font-size: 1.2em;
         position: absolute;
         top: 470px;
-        left: 26.2%;
+        left: 87px;
     }
     main > fieldset > p > #i-volta2 {
         width: 200px;
         height: 28.5px;
         text-align: center;
         font-size: 1.2em;
-        position: relative;
-        top: -26px;
-        left: -120px;
+        position: absolute;
+        top: 470px;
+        left: -40px;
+        
     }
     footer {
         display: flex;
