@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/voo.css">
+    <title>SWA Passagens</title>
+</head>
+<body>
+    <header>
+        <label for="imenu3" class="menuz3">
+            <div class="linhas" id="linha1"></div>
+            <div class="linhas" id="linha2"></div>
+            <div class="linhas" id="linha3"></div>
+        </label>
+        <input type="checkbox" name="menu3" id="imenu3" class="menuz3">
+        <img src="imagens/LOGOFIM.png" alt="logo southwest airlines">
+        <nav id="menu1">
+            <a href="#">Home</a>
+            <a href="#">Promoções</a>
+            <a href="#">Fale conosco</a>
+        </nav>
+        <nav id="menu2">
+            <a href="#">Sign in</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+    <label for="idesligar" class="bot">Desligar animação</label>
+    <input type="checkbox" name="desligar" id="idesligar" >
+    <main>
+        <fieldset autocomplete="on">
+            <legend>Selecione seu destino</legend>
+            <p>
+                <input list="destinoslist" name="saindo" id="isaindo" placeholder="Saindo de...">
+    <br>
+                <input list="destinoslist" name="destino" id="idestino" placeholder="Para...">
+            </p>
+            <datalist id="destinoslist">
+                <option value="Acre-AC"></option>
+                <option value="Alagoas-AL"></option>
+                <option value="Amapá-AP"></option>
+                <option value="Amazonas-AM"></option>
+                <option value="Bahia-BA"></option>
+                <option value="Ceará-CE"></option>
+                <option value="Espírito Santo-ES"></option>
+                <option value="Goiás-GO"></option>
+                <option value="Maranhão-MA"></option>
+                <option value="Mato Grosso-MT"></option>
+                <option value="Mato Grosso do Sul-MS"></option>
+                <option value="Minas Gerais-MG"></option>
+                <option value="Pará-PA"></option>
+                <option value="Paraíba-PB"></option>
+                <option value="Paraná-PR"></option>
+                <option value="Pernambuco-PE"></option>
+                <option value="Piauí-PI"></option>
+                <option value="Rio de Janeiro-RJ"></option>
+                <option value="Rio Grande do Norte-RN"></option>
+                <option value="Rio Grande do Sul-RS"></option>
+                <option value="Rondônia-RO"></option>
+                <option value="Roraima-RR"></option>
+                <option value="Santa Catarina-SC"></option>
+                <option value="São Paulo-SP"></option>
+                <option value="Sergipe-SE"></option>
+                <option value="Tocantins-TO"></option>
+                <option value="Distrito Federal-DF"></option>
+            </datalist>
+            <p> <!--Coloquei os ID iguais em vez de class, apenas por convenção, compreendo que atribuir class seria melhor.-->
+                <label for="iida" id="iida">Somente Ida</label>
+                <input type="radio" name="idavolta" id="iida" checked>
+                <label for="ivolta" id="ivolta">Ida e Volta</label>
+                <input type="radio" name="idavolta" id="ivolta">
+                <br>
+                <label for="i-ida" id="i-ida2">Ida:</label>
+                <input type="date" name="ida" id="i-ida" min="2023-04-04" max="2024-04-04" >
+                <br>
+                <label for="i-volta" id="i-volta2" class="volta">Volta:</label>
+                <input type="date" name="volta" id="i-volta" min="2023-04-04" max="2024-04-04"  class="volta">
+            </p>
+            <a href="#">Buscar</a>
+        </fieldset>
+        <img src="imagens/aviaoanima22.png" alt="aviao">
+    </main>
+    <aside>
+        <div class="estados" id="rj"> <h1>Rio de Janeiro-RJ</h1>
+            <h1 class="hvr"> Ver descontos</h1>
+            <img src="imagens/etiqueta20.png" alt="etiqueta de desconto">
+        </div>
+        <div class="estados" id="rec"><h1>Recife-PE</h1>
+            <h1 class="hvr"> Ver descontos</h1>
+            <img src="imagens/etiqueta30.png" alt="etiqueta de desconto">
+        </div>
+        <div class="estados" id="sp"><h1>São Paulo-SP</h1>
+            <h1 class="hvr"> Ver descontos</h1>
+            <img src="imagens/etiqueta20.png" alt="etiqueta de desconto">
+        </div>
+        <div class="estados" id="op"><h1>Ouro Preto-MG</h1>
+            <h1 class="hvr"> Ver descontos</h1>
+            <img src="imagens/etiqueta50.png" alt="etiqueta de desconto">
+        </div>
+        <div class="estados" id="nat"><h1>Natal-RN</h1>
+            <h1 class="hvr"> Ver descontos</h1>
+            <img src="imagens/etiqueta30.png" alt="etiquetas de desconto">
+        </div>
+    </aside>
+    <footer>
+        <img src="imagens/americanA2.png" alt="Logo american airlines" id="AA">
+        <img src="imagens/booking.png" alt="logo booking" >
+        <img src="imagens/deltaA2.png" alt="logo delta airlines" id="DA">
+        <img src="imagens/latam.png" alt="logo latam" id="LT">
+        <img src="imagens/gol.png" alt="logo gol" id="GL">
+    </footer>
+</body>
+</html>
