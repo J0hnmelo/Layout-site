@@ -473,7 +473,7 @@ footer > img {
 .menuz3 {
     display: none;
 }
-@media screen and (min-width: 400px) and (max-width: 1024px) {
+@media screen and (min-width: 200px) and (max-width: 1024px) {
     body {
         grid-gap: 35px;
     }
