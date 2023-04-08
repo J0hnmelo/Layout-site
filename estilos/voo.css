@@ -118,7 +118,7 @@ main > fieldset {/*#026CB6*/
     align-items: top;
     width: 400px;
     height: 400px;
-    background-image: linear-gradient(to bottom, #026CB6 -5%, rgba(223, 147, 5, 0.781));
+    background-image: linear-gradient(to bottom, #026CB6, rgba(223, 147, 5, 0.781));
     border-radius: 15px;
     
 
@@ -678,31 +678,24 @@ footer > img {
     }
     header > img {
         position: relative;
-        left: -42px;
+        left: 40px;
     }
     header > #menu1 {
-        display:none;
-        flex-direction: column;
+        display:flex;
         justify-content: center;
-        background-color: rgba(36, 191, 196, 0.685);
-        border: 2px solid black;
-        height: 200px;
-        width: 100px;
-        padding: 80px;
-        position: fixed;
-        top: 40px;
-        animation-fill-mode: forwards;
-        animation-name: menuz;
-        transition: 0.3s;
-        animation-duration: 0.5s;
+        position: relative;
+        top: 80px;
+        left:-410px;
+        border: none;
     }
     header > #menu1 > a {
         margin: 0;
+        margin-left: 5px;
         margin-bottom: 15px;
         padding: 5px;
-        width: 150px;
+        width: 120px;
         text-align: center;
-        border-bottom: 2px solid black;
+        border: 2px solid black;
     }
 
     header > #menu2 {
@@ -711,13 +704,14 @@ footer > img {
         height: 50px;
         text-align: center;
         position: relative;
-        left: -403px;
-        top: 100%;
+        left: -700px;
+        top: 150px;
     }
     header > #menu2 > a {
         width:100px;
         padding: 10px 20px; 
         margin-top: 30px;
+        border: 2px solid black;
     }
     .menuz3 {
         display: flex;
@@ -764,17 +758,21 @@ footer > img {
     #idesligar {
         display: none;
     }
+    main > fieldset {
+        position: relative;
+        top: 40px;
+    }
     main > img {
         display: none;
     }
     main > fieldset > p > #i-volta {
         width: 200px;
-        height: 28.5px;
+        height: 32px;
         text-align: center;
         font-size: 1.2em;
         position: absolute;
-        top: 470px;
-        left: 87px;
+        top: 250px;
+        left: 81px;
     }
     main > fieldset > p > #i-volta2 {
         width: 200px;
@@ -782,8 +780,8 @@ footer > img {
         text-align: center;
         font-size: 1.2em;
         position: absolute;
-        top: 470px;
-        left: -40px;
+        top: 255px;
+        left: -45px;
         
     }
     footer {
@@ -812,5 +810,41 @@ footer > img {
     }
     .estados {
         margin-bottom: 10px;
+    }
+    .menuz3 {
+        display: none;
+    }
+    .linhas {
+        background-color: rgb(255, 153, 0);
+        height: 5px;
+        width: 30px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+    }
+    
+    
+    
+
+    
+    @keyframes menuz {
+        to {
+            transform: translate(245px, 5%)
+        }
+       }
+    #imenu3 {
+        display: none;
+    }
+    header > label > span {
+        background-color: red;
+        
+    }
+    .bot {
+        display: none;
+    }
+    #idesligar {
+        display: none;
+    }
+    main > img {
+        display: none;
     }
 }
