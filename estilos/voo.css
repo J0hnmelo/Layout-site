@@ -479,6 +479,9 @@ footer > img {
     body {
         grid-gap: 35px;
     }
+    header { 
+        width: 500px;
+    }
     header > img {
         position: relative;
         left: -42px;
@@ -492,7 +495,8 @@ footer > img {
         height: 200px;
         width: 100px;
         padding: 80px;
-        position: absolute;
+        position: relative;
+        left: -335px;
         top: 40px;
         animation-fill-mode: forwards;
         animation-name: menuz;
@@ -514,7 +518,7 @@ footer > img {
         height: 50px;
         text-align: center;
         position: relative;
-        left: -403px;
+        left: -470px;
         top: 100%;
     }
     header > #menu2 > a {
@@ -667,6 +671,9 @@ footer > img {
     }
     .estados {
         margin-bottom: 10px;
+    }
+    .estados > h1 {
+        margin-right: 100px;
     }
 }
 @media screen and (min-width: 100px) and (max-width: 400px) {
@@ -841,5 +848,12 @@ footer > img {
     }
     main > fieldset > a {
         top:290px;
+    }
+    .hvr {
+        position: relative;
+        left:50px;
+    }
+    .estados > h1 {
+    margin-right: 90px;
     }
 }
