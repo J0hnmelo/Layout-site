@@ -118,7 +118,7 @@ main > fieldset {/*#026CB6*/
     align-items: top;
     width: 400px;
     height: 400px;
-    background-image: linear-gradient(to bottom, #026CB6, rgba(223, 147, 5, 0.781));
+    background-image: linear-gradient(to bottom, #026CB6, rgba(5, 223, 132, 0.781));
     border-radius: 15px;
     
 
@@ -128,7 +128,7 @@ main > fieldset > legend {
     padding: 6px;
     color: black;
     text-shadow:  -1px -1px 1px rgba(0, 0, 0, 0.74);
-    background-image: linear-gradient(to top, #915609ce 1%, var(--cor1)90%);
+    background-image: linear-gradient(to top, #915609ce , var(--cor1));
     border-radius: 10px;
     border: 1px solid black;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.527), -1px -1px 1px rgba(0, 0, 0, 0.521);
@@ -685,15 +685,15 @@ footer > img {
         justify-content: center;
         position: relative;
         top: 80px;
-        left:-410px;
+        left:-420px;
         border: none;
     }
     header > #menu1 > a {
         margin: 0;
-        margin-left: 5px;
+        margin-left: 3px;
         margin-bottom: 15px;
-        padding: 5px;
-        width: 120px;
+        padding: 0px;
+        width: 130px;
         text-align: center;
         border: 2px solid black;
     }
@@ -748,10 +748,7 @@ footer > img {
     #imenu3 {
         display: none;
     }
-    header > label > span {
-        background-color: red;
-        
-    }
+   
     .bot {
         display: none;
     }
@@ -821,11 +818,6 @@ footer > img {
         margin-bottom: 5px;
         border-radius: 10px;
     }
-    
-    
-    
-
-    
     @keyframes menuz {
         to {
             transform: translate(245px, 5%)
